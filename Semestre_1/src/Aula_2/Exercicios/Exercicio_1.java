@@ -1,4 +1,4 @@
-package Aula_2;
+package Aula_2.Exercicios;
 
 public class Exercicio_1 {
     public static void main(String[] args) throws Exception {
