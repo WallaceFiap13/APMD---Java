@@ -20,5 +20,7 @@ public class Exercicio_2 {
 
         System.out.printf("%s%.2f\n", "A conversão é: ", C);
         System.out.println("");
+
+        input_keyboard.close();
     }
 }
