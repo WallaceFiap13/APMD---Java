@@ -28,7 +28,7 @@ public class Exercicio_2 {
             System.out.print("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
             parcelamento = input_keyboard.nextInt();
 
-            if (parcelamento <= 3) { // Parcelamento até 3 vezes
+            if (parcelamento >1 && parcelamento <=3) { // Parcelamento até 3 vezes
                 valor_f = valor_i;
                 // Nova maneira de formatar, mais fácil, escreve a string e adiciona as variáveis dentro dela com %.0f, %d, %s ou %c
                 System.out.println("");
@@ -47,13 +47,17 @@ public class Exercicio_2 {
                 System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
                 System.out.println("");
             }
-            else { // Parcelamento em 5 vezes
+            else if (parcelamento == 5){ // Parcelamento em 5 vezes
                 valor_f = valor_i * 1.06;
                 System.out.println("");
                 System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas com 6%% de juros)\n", valor_f, parcelamento);
 
                 valor_p = valor_f / parcelamento;
                 System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
+                System.out.println("");
+            }
+            else {
+                System.out.println("Insira um valor entre 1 e 5");
                 System.out.println("");
             }
         }
