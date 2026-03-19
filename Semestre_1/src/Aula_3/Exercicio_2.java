@@ -5,62 +5,72 @@ import java.util.Scanner;
 public class Exercicio_2 {
     public static void main(String[] args) {
         double valor_i, valor_f, valor_p;
-        int pagamento, parcelamento;
+        int pagamento, parcelamento, rep;
 
         Scanner input_keyboard = new Scanner(System.in);
 
-        System.out.println("");
-        System.out.print("Qual o valor da compra (R$)? ");
-        valor_i = input_keyboard.nextDouble();
-
-        System.out.println("");
-        System.out.print("Qual a forma de pagamento, a vista (1) ou a prazo (2)? ");
-        pagamento = input_keyboard.nextInt();
-
-        if (pagamento == 1) { // a vista
-            valor_f = valor_i * 0.9;
+        do{
             System.out.println("");
-            System.out.printf("%s%.2f a vista\n", "O valor final da compra é de: R$ ", valor_f);
-            System.out.println("");
-        }
-        else { // a prazo
-            System.out.println("");
-            System.out.print("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
-            parcelamento = input_keyboard.nextInt();
+            System.out.print("Qual o valor da compra (R$)? ");
+            valor_i = input_keyboard.nextDouble();
 
-            if (parcelamento >1 && parcelamento <=3) { // Parcelamento até 3 vezes
-                valor_f = valor_i;
-                // Nova maneira de formatar, mais fácil, escreve a string e adiciona as variáveis dentro dela com %.0f, %d, %s ou %c
+            System.out.println("");
+            System.out.print("Qual a forma de pagamento, a vista (1) ou a prazo (2)? ");
+            pagamento = input_keyboard.nextInt();
+
+        
+            if (pagamento == 1) { // a vista
+                valor_f = valor_i * 0.9;
                 System.out.println("");
-                System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas sem juros)\n", valor_f, parcelamento);
+                System.out.printf("%s%.2f a vista\n", "O valor final da compra é de: R$ ", valor_f);
+                System.out.println("");
+            }
+            else { // a prazo
+                System.out.println("");
+                System.out.print("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
+                parcelamento = input_keyboard.nextInt();
+
+                while(parcelamento == 1 || parcelamento >5){ // Verificação se está dentro do valor de entrada possível
+                    System.out.println("Número de parcelas inválido, insira um valor entre 2 e 5");
+                    System.out.println("");
+
+                    System.out.println("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
+                    parcelamento = input_keyboard.nextInt();
+                }   
+
+                if (parcelamento <=3) { // Parcelamento até 3 veze
+                    valor_f = valor_i;
+                    // Nova maneira de formatar, mais fácil, escreve a string e adicsiona as variáveis dentro dela com %.0f, %d, %s ou %c
+                    System.out.println("");
+                    System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas sem juros)\n", valor_f, parcelamento);
                 
-                valor_p = valor_f / parcelamento;
-                System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
-                System.out.println("");
-            }
-            else if (parcelamento == 4) { // Parcelamento em 4 vezes
-                valor_f = valor_i * 1.05;
-                System.out.println("");
-                System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas com 5%% de juros)\n", valor_f, parcelamento);
+                    valor_p = valor_f / parcelamento;
+                    System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
+                    System.out.println("");
+                }
+                else if (parcelamento == 4) { // Parcelamento em 4 vezes
+                    valor_f = valor_i * 1.05;
+                    System.out.println("");
+                    System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas com 5%% de juros)\n", valor_f, parcelamento);
 
-                valor_p = valor_f / parcelamento;
-                System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
-                System.out.println("");
-            }
-            else if (parcelamento == 5){ // Parcelamento em 5 vezes
-                valor_f = valor_i * 1.06;
-                System.out.println("");
-                System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas com 6%% de juros)\n", valor_f, parcelamento);
+                    valor_p = valor_f / parcelamento;
+                    System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
+                    System.out.println("");
+                }
+                else { // Parcelamento em 5 vezes
+                    valor_f = valor_i * 1.06;
+                    System.out.println("");
+                    System.out.printf("O valor da compra é de R$ %.2f (em %d parcelas com 6%% de juros)\n", valor_f, parcelamento);
 
-                valor_p = valor_f / parcelamento;
-                System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
-                System.out.println("");
+                    valor_p = valor_f / parcelamento;
+                    System.out.printf("O valor de cada parcela é de R$ %.2f\n", valor_p);
+                    System.out.println("");
+                }
             }
-            else {
-                System.out.println("Insira um valor entre 1 e 5");
-                System.out.println("");
-            }
-        }
+
+            System.out.println("Tem outro cliente? Sim(1), Não(0)");
+            rep = input_keyboard.nextInt();
+        } while(rep == 1);
 
         input_keyboard.close();
     }
