@@ -1,8 +1,8 @@
-package Aula_3;
+package Aula_3.Exercícios;
 
 import java.util.Scanner;
 
-public class Exercicio_1 {
+public class Exercicio_1_2 {
     public static void main(String[] args) {
         double valor_i, valor_f, valor_p;
         int pagamento, parcelamento;

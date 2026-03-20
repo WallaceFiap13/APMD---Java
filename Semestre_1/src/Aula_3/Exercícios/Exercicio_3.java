@@ -1,8 +1,8 @@
-package Aula_3;
+package Aula_3.Exercícios;
 
 import java.util.Scanner;
 
-public class Exercicio_2 {
+public class Exercicio_3 {
     public static void main(String[] args) {
         double valor_i, valor_f, valor_p;
         int pagamento, parcelamento, rep;
@@ -26,17 +26,16 @@ public class Exercicio_2 {
                 System.out.println("");
             }
             else { // a prazo
-                System.out.println("");
-                System.out.print("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
-                parcelamento = input_keyboard.nextInt();
-
-                while(parcelamento == 1 || parcelamento >5){ // Verificação se está dentro do valor de entrada possível
-                    System.out.println("Número de parcelas inválido, insira um valor entre 2 e 5");
+                do {
                     System.out.println("");
-
-                    System.out.println("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
+                    System.out.print("Em quantas vezes você quer parcelar a sua compra (parcelamos em até 5 vezes)? ");
                     parcelamento = input_keyboard.nextInt();
-                }   
+
+                    if (parcelamento == 1 || parcelamento >5) { // Verificação se está dentro do valor de entrada possível
+                        System.out.println("Número de parcelas inválido, insira um valor entre 2 e 5");
+                        System.out.println("");
+                    }
+                } while(parcelamento == 1 || parcelamento >5);
 
                 if (parcelamento <=3) { // Parcelamento até 3 veze
                     valor_f = valor_i;
