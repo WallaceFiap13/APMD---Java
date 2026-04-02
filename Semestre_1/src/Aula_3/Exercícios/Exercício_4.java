@@ -12,22 +12,18 @@ public class Exercício_4 {
         do{
             System.out.println();
             System.out.println("Selecione uma das opções abaixo:");
-            System.out.println("1 - Média Aritmética");
-            System.out.println("2 - Média Ponderada");
-            System.out.println("3 - Encerrar o Programa");
-            System.out.print("Opção - ");
 
             do{
+                System.out.println("1 - Média Aritmética");
+                System.out.println("2 - Média Ponderada");
+                System.out.println("3 - Encerrar o Programa");
+                System.out.print("Opção - ");
                 selecao = inputkeyboard.nextInt();
 
                 if(selecao <1 || selecao >3){
                     System.out.println();
                     System.out.println();
                     System.err.println("Opção inválida, selecione entre as opções 1, 2 ou 3:");
-                    System.out.println("1 - Média Aritmética");
-                    System.out.println("2 - Média Ponderada");
-                    System.out.println("3 - Encerrar o Programa");
-                    System.out.print("Opção - ");
                 }
             } while(selecao <1 || selecao >3);
 
