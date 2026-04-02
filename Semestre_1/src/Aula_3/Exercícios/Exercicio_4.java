@@ -2,7 +2,7 @@ package Aula_3.Exercícios;
 
 import java.util.Scanner;
 
-public class Exercício_4 {
+public class Exercicio_4 {
     public static void main(String[] args) {
         double d1, d2, d3, r1, r2, r3, mediaAritmetica, mediaPonderada;
         int selecao;
