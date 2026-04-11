@@ -1,4 +1,4 @@
-package Aula_4.Exercícios;
+package Aula_4_Funções.Exercícios;
 
 import java.util.Scanner;
 
@@ -27,6 +27,7 @@ public class Exercicio_2 {
                 }
             } while(nota_2 <0 || nota_2 >10);
 
+            //Não esquecer que para valores inteiros formatados usamos o %d (tem no material "aula 2" todos os formatos)
             System.out.printf("A média da nota do Aluno %d é: %.2f (%c)\n", contador, media_com_pesos(nota_1, nota_2), conceito(media_com_pesos(nota_1, nota_2)));
         }
         inputKeyboard.close();

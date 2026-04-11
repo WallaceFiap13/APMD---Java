@@ -1,4 +1,4 @@
-package Aula_2.Exercicios;
+package Aula_2_Declaração_Formatação.Exercicios;
 
 public class Exercicio_1 {
     public static void main(String[] args) throws Exception {

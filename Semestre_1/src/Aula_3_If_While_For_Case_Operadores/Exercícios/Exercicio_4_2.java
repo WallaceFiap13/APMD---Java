@@ -1,8 +1,8 @@
-package Aula_3.Exercícios;
+package Aula_3_If_While_For_Case_Operadores.Exercícios;
 
 import java.util.Scanner;
 
-public class Exercicio_4_1 {
+public class Exercicio_4_2 {
     public static void main(String[] args) {
         double d1, d2, d3, r1, r2, r3, mediaAritmetica, mediaPonderada;
         int selecao;

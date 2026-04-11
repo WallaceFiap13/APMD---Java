@@ -1,4 +1,4 @@
-package Aula_3.Exercícios;
+package Aula_3_If_While_For_Case_Operadores.Exercícios;
 
 public class Exercicio_5 {
     public static void main(String[] args) {

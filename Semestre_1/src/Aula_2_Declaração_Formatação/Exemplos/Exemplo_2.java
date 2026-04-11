@@ -1,4 +1,4 @@
-package Aula_2.Exemplos;
+package Aula_2_Declaração_Formatação.Exemplos;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Aula_3.Exemplos;
+package Aula_3_If_While_For_Case_Operadores.Exemplos;
 
 import java.util.Scanner;
 

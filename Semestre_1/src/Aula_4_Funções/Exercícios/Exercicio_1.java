@@ -1,4 +1,4 @@
-package Aula_4.Exercícios;
+package Aula_4_Funções.Exercícios;
 
 import java.util.Scanner;
 
