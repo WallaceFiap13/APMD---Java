@@ -1,4 +1,4 @@
-package Aula_6.Exercicio_1;
+package Aula_6_Classes_Objetos_Metodos.Exercicios.Exercicio_1;
 
 public class ContaBancaria {
     //* Atibutos da Classe Conta Bancária

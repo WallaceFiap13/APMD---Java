@@ -1,4 +1,4 @@
-package Avaliações.Lista_de_Exercícios_1;
+package Avaliações.Chekpoints.Lista_de_Exercícios_1;
 
 public class Exercicio_2 {
     public static void main(String[] args) {

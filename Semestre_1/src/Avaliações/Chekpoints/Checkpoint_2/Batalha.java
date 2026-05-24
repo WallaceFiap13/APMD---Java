@@ -1,4 +1,4 @@
-package Avaliações.Checkpoint_2;
+package Avaliações.Chekpoints.Checkpoint_2;
 
 public class Batalha {
     public static void main(String[] args) {

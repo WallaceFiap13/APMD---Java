@@ -1,4 +1,4 @@
-package Aula_6.Exemplo_1;
+package Aula_6_Classes_Objetos_Metodos.Exemplos.Exemplo_1;
 
 public class Aplicacao {
     public static void main(String[] args) {

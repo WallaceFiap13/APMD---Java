@@ -1,4 +1,4 @@
-package Avaliações;
+package Avaliações.Chekpoints;
 
 import java.util.Scanner;
 

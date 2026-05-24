@@ -1,4 +1,4 @@
-package Avaliações.Checkpoint_2;
+package Avaliações.Chekpoints.Checkpoint_2;
 
 public class Jogador {
     // Atributos da Classe Jogador

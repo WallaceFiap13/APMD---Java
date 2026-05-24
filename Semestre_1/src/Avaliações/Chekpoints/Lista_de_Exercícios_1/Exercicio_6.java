@@ -1,4 +1,4 @@
-package Avaliações.Lista_de_Exercícios_1;
+package Avaliações.Chekpoints.Lista_de_Exercícios_1;
 
 import java.util.Scanner;
 
